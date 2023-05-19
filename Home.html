@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+     <link rel="stylesheet" type="text/css" href="slideshow.css">
+     <style type="text/css">
+        body{
+            background-image: url("");
+            background-size: cover;
+        }
+        .product {
+
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  min-width: 100%;
+   overflow-x: hidden; /* hide the scrollbar */
+  position: relative; /* set the position of the container */
+}
+.product-item{
+    margin-right: 20px;
+}
+
+        .product img{
+    width: 150px;
+    height: 150px;
+     position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.product span {
+  white-space: nowrap;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* hide the scrollbar */
+  position: relative;
+}
+
+iframe {
+    position: static;
+}
+.topsales{
+    margin-top: 250px;
+}
+.topsales img:hover{
+    width: 170px;
+    height: 170px;
+    
+}
+.newarrival{
+    margin-top: 50px;
+}
+.newarrival img:hover{
+    width: 170px;
+    height: 170px;
+    
+}
+.liquours{
+    margin-top: 50px;
+}
+.liquors img:hover{
+    width: 170px;
+    height: 170px;
+    
+}
+.cocktail{
+    margin-top: 50px;
+}
+.cocktail img:hover{
+    width: 170px;
+    height: 170px;
+    
+}
+.traditional{
+    margin-top: 50px;
+}
+.traditional img:hover{
+    width: 170px;
+    height: 170px;
+    
+}
+
+
+.product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* hide the scrollbar */
+}
+
+.product-item {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Add some spacing between items */
+}
+
+/* Hide scrollbar for Firefox */
+.product-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.product-list::-webkit-scrollbar-track {
+  display: none;
+}
+
+     </style>
+
+ <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="jquery.js"></script>
+  <script type="text/javascript" defer src="switcher.js"></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="accecery">
+    <a href="SIGNIN.php" class="external-link" >Signin</a>
+    <a href="SIGNUP.php" class="external-link" >Signup</a>
+<div class="cart">
+  <a href="cart.php" id="cartLink" onclick="toggleCart()">Cart</a>
+  
+</div>
+    
+        <a href="SIGNIN.php" class="external-link" style="margin-left: 1200px; margin-top: 5px;" >Logout</a>
+        <li class="nav-item has-dropdown" tabindex="0" style="font-size: 10px;margin-left: 1200px; margin-top: 1px;">
+                Theme
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="light">light</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="dark">Dark</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="solar">solar</a>
+                    </li>
+
+                </ul>
+
+            </li>
+</span>
+
+
+    <header>
+
+<span class="logo">
+  <a href="#"><img src="Image/alem.jpg" width="50" height="50"></a>
+</span>
+
+    <span>
+        <input type="search" placeholder="Search here ..." name=""  id="search-input"> 
+    </span>
+    <span>
+        <button id="search-button">Search</button>
+    </span>
+</header>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="Home.html" class="external-link" style="font-size: 17px;">Home</a></li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Electronics
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="homeElectronics.html" class="external-link" id="Traditional">Home Electronics</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                            <a href="computerandacc.html" id="Modern">computer and accessary</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Food Item
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="processed.html" id="Traditional">Processed</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="organic.html" id="Modern">organic</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Beverage
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="AlcholicBeverage.html" class="external-link" id="Traditional">Alcholic Beverage</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">NOn-Alcholic Beverage</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Furniture
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="Traditional">Home Furniture</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">Office Furniture</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Stationary
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="Traditional">Traditional</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">Modern</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Beauty Product
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="Traditional">Men Beauty Product</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">Women Beauty Product</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Cloth
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="traditionalcloth.html" id="Traditional">Traditional</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="moderncloth.html" id="Modern">Modern</a>
+                
+
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="adv">
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="Image/Img1.jpg" style="width:100%;height: 220px">
+        </div>
+        <div class="mySlides">
+            <img src="Image/Img2.jpg" style="width:100%;height: 220px">
+        </div>
+        <div class="mySlides">
+            <img src="Image/Img3.jpg" style="width:100%;height: 220px">
+        </div>
+    </div>
+
+</div>
+
+       
+    </div>
+
+</div>
+<script type="text/javascript"  defer src="java.js"></script>
+
+<div class="topsales">
+    <h3>Top Sales</h3>
+    <div class="product">
+        <div class="product-list">
+       <div class="product-item">
+        <img src="Image/Beer/Dashen.jpg">
+        <div class="product-info">
+            <h3>Dashen beer</h3>
+      <p>$2.99</p>
+          <button onclick="addToCart('Dashen beer', 2.99)">Add to Cart</button>
+        </div>
+        </div>
+
+           <div class="product-item">
+        <img src="Image/Ovens/O4.jpg">
+        <div class="product-info">
+            <h3>O4 Ovens</h3>
+      <p>$102.99</p>
+           <button onclick="addToCart('O4 Ovens', 102.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="product-item">
+        <img src="Image/Ovens/Dispatcher.jpg">
+        <div class="product-info">
+            <h3>Dispatcher </h3>
+      <p>$320.99</p>
+        <button onclick="addToCart('Dispatcher',320.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+        <div class="product-item">
+<img src="Image/Traditional/Tej.jpg">
+        <div class="product-info">
+            <h3>Traditional Tej</h3>
+      <p>$3.99</p> 
+       <button onclick="addToCart('Traditional Tej',3.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+        <div class="product-item">
+    <img src="Image/Beer/Hein.jpg">
+        <div class="product-info">
+            <h3>Heniken beer</h3>
+      <p>$2.99</p>
+        <button onclick="addToCart('Heniken beer',2.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+  <div class="product-item">
+        <img src="Image/Beer/Dashen.jpg">
+        <div class="product-info">
+            <h3>Dashen beer</h3>
+      <p>$5.99</p>
+        <button onclick="addToCart('Dashen beer',5.99)">Add to Cart</button>
+        </div>
+        </div>
+
+           <div class="product-item">
+        <img src="Image/Ovens/O4.jpg">
+        <div class="product-info">
+            <h3>O4 Ovens</h3>
+      <p>$106.99</p>
+        <button onclick="addToCart('O4 Ovens',106)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="product-item">
+        <img src="Image/Ovens/Dispatcher.jpg">
+        <div class="product-info">
+            <h3>Dispatcher </h3>
+      <p>$350.99</p>
+        <button onclick="addToCart('Dispatcher',350)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+        <div class="product-item">
+<img src="Image/Traditional/Tej.jpg">
+        <div class="product-info">
+            <h3>Traditional Tej</h3>
+      <p>$13.99</p>
+        <button onclick="addToCart('Traditional Tej',13.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+        <div class="product-item">
+        <img src="Image/Beer/Walia.jpg">
+        <div class="product-info">
+            <h3>Walia beer</h3>
+      <p>$5.99</p>
+        <button onclick="addToCart('Walia beer',5.99)">Add to Cart</button>
+        </div>
+        </div>
+</div>
+</div>
+</div>
+<div class="newarrival">
+    <h3>New Arrival</h3>
+    <div class="product">
+
+<div class="product-list">
+               <div class="product-item">
+   <img src="Image/Ovens/M2.jpg">
+        <div class="product-info">
+            <h3>M2</h3>
+      <p>$250.99</p>
+        <button onclick="addToCart('M2',250.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="product-item">
+        <img src="Image/Ovens/O2.jpg">
+        <div class="product-info">
+            <h3>O2 Ovens</h3>
+      <p>$150.99</p>
+        <button onclick="addToCart('O2 Ovens',150)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+        <div class="product-item">
+   <img src="Image/Refregirator/Samsung  Double Door .jpg">
+        <div class="product-info">
+            <h3>Samsung  Double Door </h3>
+      <p>$450.99</p>
+        <button onclick="addToCart('Samsung Double Door',450.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+</div>
+</div>  
+</div>
+
+
+<div class="liquours">
+    <h3>Discount</h3>
+    <div class="product">
+       <div class="product-list">
+       <div class="product-item">
+        <img src="Image/Beer/Dashen.jpg">
+        <div class="product-info">
+            <h3>Dashen beer</h3>
+      <p>$5.99</p>
+       <button onclick="addToCart('Dashen beer'5.99)">Add to Cart</button>
+        </div>
+        </div>
+
+           <div class="product-item">
+        <img src="Image/Ovens/O4.jpg">
+        <div class="product-info">
+            <h3>O4 Ovens</h3>
+      <p>$125.99</p>
+
+       <button onclick="addToCart('O4 Ovens',125.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="product-item">
+        <img src="Image/Ovens/Dispatcher.jpg">
+        <div class="product-info">
+            <h3>Dispatcher </h3>
+      <p>$124.99</p>
+
+       <button onclick="addToCart('Dispatcher',124.99)">Add to Cart</button>
+        </div>
+        </div>
+
+</div>
+    </div>
+    
+</div>
+
+
+<div class="cocktail">
+    <h3>Daily product</h3>
+    <div class="product">
+
+       <div class="product-list">
+
+       <div class="product-item">
+         <img src="Image/Ovens/O4.jpg">
+        <div class="product-info">
+            <h3>O4 Ovens</h3>
+      <p>$250.99</p>
+        <button onclick="addToCart('O4 Ovens',250.99)">Add to Cart</button>
+        </div>
+        </div>
+
+           <div class="product-item">
+        <img src="Image/Ovens/M4.jpg">
+        <div class="product-info">
+            <h3>M4 Ovens</h3>
+      <p>$178.99</p>
+        <button onclick="addToCart('M4 Ovens',178.99)">Add to Cart</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="product-item">
+        <img src="Image/Ovens/Dispatcher.jpg">
+         <div class="product-info">
+            <h3>Dispacher</h3>
+      <p>$124.99</p>
+        <button onclick="addToCart('Dispatcher',124.99)">Add to Cart</button>
+        </div>
+        </div>
+         <div class="product-item">
+       <img src="Image/Beer/Hein.jpg">
+        <div class="product-info">
+            <h3>Heniken beer</h3>
+      <p>$5.99</p>
+        <button onclick="addToCart('Heniken beer',5.99)">Add to Cart</button>
+        </div>
+        </div>
+
+</div>
+    </div>
+    
+</div>
+
+
+<script>
+  function toggleCart() {
+    var cartForm = document.getElementById('cartForm');
+    var cartLink = document.getElementById('cartLink');
+
+    if (cartForm.style.display === 'none') {
+      cartForm.style.display = 'block';
+    } else {
+      cartForm.style.display = 'none';
+    }
+  }
+
+  function addToCart(productName, price) {
+    var cartForm = document.getElementById('cartForm');
+
+    $.ajax({
+      type: "POST",
+      url: "cart.php",
+      data: { productName: productName, price: price },
+      success: function(response) {
+        // Handle success response if needed
+        console.log(response);
+
+        // Display the pop-up message
+        alert('Item added to cart: ' + productName + ' - $' + price.toFixed(2));
+      },
+      error: function(xhr, status, error) {
+        // Handle error if needed
+        console.log(error);
+      }
+    });
+  }
+
+<script defer src="search.js"></script>
+</body>
+<iframe src="Footer.html" frameborder="0" width="100%" height="80"></iframe>
+</html>

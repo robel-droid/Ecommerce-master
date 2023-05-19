@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Electronics</title>
+	 <link rel="stylesheet" type="text/css" href="slideshow.css">
+
+
+
+
+ <link rel="stylesheet" type="text/css" href="slideshow.css">
+    <script type="text/javascript" defer src="switcher.js"></script>
+<style type="text/css">
+    body{
+    	background-size: cover;
+        height: 1500px;
+        color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+    :root{
+    --gray0:#f8f8f8;
+    --gray1:#dbe1e8;
+    --gray2:#b2becd;
+    --gray3:#6c7983;
+    --gray4:#454e56;
+    --gray5:#2a2e35;
+    --gray6:#12181b;
+    --blue:#0084a5;
+    --purple:#a82dd1;
+    --yellow:#ff565;
+    
+}
+.light{
+--bg:var(--gray0);<script type="text/javascript" defer src="switcher.js"></script>
+--bg-nav:linear-gradient(to right,var(--gray1),var(--gray3));
+--bg-dropdown:var(--gray0);
+--bg-solar:var(--yellow);
+--border-color:var(--blue);
+--text:var(--gray6);
+
+    
+}
+.dark{
+--bg:var(--gray5);
+--bg-nav:linear-gradient(to right,var(--gray5),var(--gray6));
+--bg-dropdown:var(--gray6);
+--bg-solar:var(--blue);
+--border-color:var(--purple);
+--text:var(--gray0);
+    
+}
+
+.solar{
+--gray0:#fbffd4;
+    --gray1:#f7f8d0;
+    --gray2:#b6f880;
+    --gray3:#5ec72d;
+    --gray4:#3ea565;
+    --gray5:#005368;
+    --gray6:#003d4c;
+    
+}
+#dark::before{
+    background: #2a2e35;
+}
+#light::before{
+    background: #ffffff;
+}
+#solar::before{
+    background: var(--bg-solar);
+}
+
+@keyframes color-rotate {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+	 	.product {
+
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  min-width: 100%;
+   overflow-x: hidden; /* hide the scrollbar */
+  position: relative; /* set the position of the container */
+}
+.product-item{
+	margin-right: 20px;
+}
+
+	 	.product img{
+    width: 150px;
+    height: 150px;
+     position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.product span {
+  white-space: nowrap;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* hide the scrollbar */
+  position: relative;
+}
+
+iframe {
+    position: static;
+}
+.Tv{
+	margin-top: 250px;
+}
+.Light{
+	margin-top: 50px;
+}
+.Refregirator{
+	margin-top: 50px;
+}
+.Ovens{
+	margin-top: 50px;
+}
+
+.Tv img:hover{
+	width: 170px;
+    height: 170px;
+    
+}
+.Ovens img:hover{
+	width: 170px;
+    height: 170px;
+    
+}
+.Light img:hover{
+	width: 170px;
+    height: 170px;
+    
+}
+.Refregirator img:hover{
+	width: 170px;
+    height: 170px;
+    
+}
+.product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* hide the scrollbar */
+}
+
+.product-item {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Add some spacing between items */
+}
+
+/* Hide scrollbar for Firefox */
+.product-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.product-list::-webkit-scrollbar-track {
+  display: none;
+}
+
+	 </style>
+	 <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="jquery.js"></script>
+  <script type="text/javascript" defer src="switcher.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<span class="accecery">
+    <a href="SIGNIN.php" class="external-link" >Signin</a>
+    <a href="SIGNUP.php" class="external-link" >Signup</a>
+<div class="cart">
+  <a href="cart.php" id="cartLink" onclick="toggleCart()">Cart</a>
+  
+</div>
+    
+        <a href="SIGNIN.php" class="external-link" style="margin-left: 1200px; margin-top: 5px;" >Logout</a>
+        <li class="nav-item has-dropdown" tabindex="0" style="font-size: 10px;margin-left: 1200px; margin-top: 1px;">
+                Theme
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="light">light</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="dark">Dark</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="solar">solar</a>
+                    </li>
+
+                </ul>
+
+            </li>
+</span>
+
+
+	<header>
+
+<span class="logo">
+  <a href="Home.html"><img src="Image/alem.jpg" width="50" height="50"></a>
+</span>
+
+	<span>
+		<input type="search" placeholder="Search here ..." name=""  id="search-input"> 
+	</span>
+	<span>
+		<button id="search-button">Search</button>
+	</span>
+</header>
+	    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="Home.html" class="external-link" style="font-size: 17px;">Home</a></li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Electronics
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="homeElectronics.html" class="external-link" id="Traditional">Home Electronics</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                            <a href="computerandacc.html" id="Modern">computer and accessary</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Food Item
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="processed.html" id="Traditional">Processed</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="organic.html" id="Modern">organic</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+            <li class="nav-item has-dropdown" tabindex="0">
+                Beverage
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="AlcholicBeverage.html" class="external-link" id="Traditional">Alcholic Beverage</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="non-alcholic.html" id="Modern">NOn-Alcholic Beverage</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Furniture
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="homefurniture.html" id="Traditional">Home Furniture</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">Office Furniture</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Stationary
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="Traditional">Traditional</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="#" id="Modern">Modern</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Beauty Product
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="menbeauty.html" id="Traditional">Men Beauty Product</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="womenbeauty.html" id="Modern">Women Beauty Product</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item has-dropdown" tabindex="0">
+                Cloth
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="traditionalcloth.html" id="Traditional">Traditional</a>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <a href="moderncloth.html" id="Modern">Modern</a>
+                
+
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+<img src="Image/Cosmos/Men/Bath/NIVEA.jpg">
+
+
+ <div class="adv">
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+       	<img src="Image/modern cloth/men/3.jpg" style="width:100%;height: 250px;">
+        </div>
+        <div class="mySlides">
+      <img src="Image/modern cloth/men/4.jpg" style="width:100%;height: 250px;">
+        </div>
+        <div class="mySlides">
+           <img src="Image/modern cloth/women/3.jpg" style="width:100%;height: 250px;">
+        </div>
+        <div class="mySlides">
+        <img src="Image/modern cloth/women/4.jpg" style="width:100%;height: 250px;">
+           </div>
+            <div class="mySlides">
+     <img src="Image/modern cloth/men/5.jpg" style="width:100%;height: 250px;">
+</div>
+
+          <div class="mySlides">
+<img src="Image/Ovens/O3.jpg"  style="width:100%;height: 250px;">
+</div>
+
+
+        </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript"  defer src="java.js"></script>
+
+<div class="Tv">
+	<h3>Women</h3>
+	<div class="product">
+		<div class="product-list">
+	   <div class="product-item">
+		<img src="/Image/modern cloth/women/3.jpg">
+		<div class="product-info">
+			<h3>tr1</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr1', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+		 	   <div class="product-item">
+		<img src="/Image/modern cloth/women/2.jpg">
+		<div class="product-info">
+			<h3>tr1tr2</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr2', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/women/3.jpg">
+		<div class="product-info">
+			<h3>tr3</h3>
+      <p>$456.99</p>
+      <button onclick="addToCart('tr3', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/women/4.jpg">
+		<div class="product-info">
+			<h3>tr4</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr4', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/women/5.jpg">
+		<div class="product-info">
+			<h3>tr5</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr5', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/women/6.jpg">
+		<div class="product-info">
+			<h3>tr6</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr6', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+		  
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="Tv">
+	<h3>Men</h3>
+	<div class="product">
+		<div class="product-list">
+	   <div class="product-item">
+		<img src="Image/modern cloth/men/3.jpg">
+		<div class="product-info">
+			<h3>tr1</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr1', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+		 	   <div class="product-item">
+		<img src="Image/modern cloth/men/2.jpg">
+		<div class="product-info">
+			<h3>tr1tr2</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr2', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/men/3.jpg">
+		<div class="product-info">
+			<h3>tr3</h3>
+      <p>$456.99</p>
+      <button onclick="addToCart('tr3', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/men/4.jpg">
+		<div class="product-info">
+			<h3>tr4</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr4', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/men/5.jpg">
+		<div class="product-info">
+			<h3>tr5</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr5', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/men/6.jpg">
+		<div class="product-info">
+			<h3>tr6</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr6', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+		  
+</div>
+</div>
+</div>
+
+
+
+<div class="Tv">
+	<h3>boys</h3>
+	<div class="product">
+		<div class="product-list">
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/3.jpg">
+		<div class="product-info">
+			<h3>tr1</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr1', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+		 	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/2.jpg">
+		<div class="product-info">
+			<h3>tr1tr2</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr2', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/3.jpg">
+		<div class="product-info">
+			<h3>tr3</h3>
+      <p>$456.99</p>
+      <button onclick="addToCart('tr3', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/4.jpg">
+		<div class="product-info">
+			<h3>tr4</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr4', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/5.jpg">
+		<div class="product-info">
+			<h3>tr5</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr5', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/boy/6.jpg">
+		<div class="product-info">
+			<h3>tr6</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr6', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+		  
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="Tv">
+	<h3>girls</h3>
+	<div class="product">
+		<div class="product-list">
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/3.jpg">
+		<div class="product-info">
+			<h3>tr1</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr1', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+		 	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/2.jpg">
+		<div class="product-info">
+			<h3>tr1tr2</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr2', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/3.jpg">
+		<div class="product-info">
+			<h3>tr3</h3>
+      <p>$456.99</p>
+      <button onclick="addToCart('tr3', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/4.jpg">
+		<div class="product-info">
+			<h3>tr4</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr4', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/5.jpg">
+		<div class="product-info">
+			<h3>tr5</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr5', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+
+
+	   <div class="product-item">
+		<img src="/Image/modern cloth/kids/girl/6.jpg">
+		<div class="product-info">
+			<h3>tr6</h3>
+      <p>$150.99</p>
+      <button onclick="addToCart('tr6', 13.99)">Add to Cart</button>
+		</div>
+		</div>
+
+
+
+		  
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  function toggleCart() {
+    var cartForm = document.getElementById('cartForm');
+    var cartLink = document.getElementById('cartLink');
+
+    if (cartForm.style.display === 'none') {
+      cartForm.style.display = 'block';
+    } else {
+      cartForm.style.display = 'none';
+    }
+  }
+
+  function addToCart(productName, price) {
+    var cartForm = document.getElementById('cartForm');
+
+    $.ajax({
+      type: "POST",
+      url: "cart.php",
+      data: { productName: productName, price: price },
+      success: function(response) {
+        // Handle success response if needed
+        console.log(response);
+
+        // Display the pop-up message
+        alert('Item added to cart: ' + productName + ' - $' + price.toFixed(2));
+      },
+      error: function(xhr, status, error) {
+        // Handle error if needed
+        console.log(error);
+      }
+    });
+  }
+</script>
+
+<script defer src="search.js"></script>
+</body>
+
+<iframe src="Footer.html" frameborder="0" width="100%" height="80"></iframe>
+</html>
